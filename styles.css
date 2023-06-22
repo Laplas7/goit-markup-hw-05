@@ -910,4 +910,78 @@ line-height: 1.14;
 
 }
 
+.list-box-decor{
+  position: relative;
+  overflow: hidden;
+}
 
+.link-port-decor{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 90%);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-port-decor p{
+
+font-weight: 400;
+font-size: 18px;
+line-height: 1.55;
+  color: #ffffff;
+}
+
+
+.my-hover:hover .link-port-decor{
+  transform: translateY(0);
+}
+
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opasity 250ms linear, visibility 250ms linear;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+
+}
+
+.close-btn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background.is-hidden{
+ opacity: o;
+ visibility: hidden;
+ pointer-events: none;
+}
